@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaduna ELectric</title>
+    <style>
+        .logo-title{
+            text-align: center;
+            margin-top: 10px;
+            padding-top: 20px;
+        }
+        body {
+            background-image: url('/images/slide_1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .overlay {
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .form-container {
+            position: relative;
+            z-index: 1;
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background: #0A6847;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div>
+        <form class="form-container">
+            <div class="logo-title">
+        <img src="images/logo.png" width="120" height="50" alt="image">
+        <p><strong>Kaduna Electric</strong></p>
+    </div>
+            <label for="meter"><strong>Meter Type</strong></label>
+            <input type="radio" name="meter">Prepaid
+            <input type="radio" name="meter">Postpaid
+            <br><br>
+            <label for="m-number"><strong>Meter Number</strong></label>
+            <input type="number" name="m-number" value="37144439736" pattern="\d+" title="Please enter a positive integer." required><br><br>
+            <label for="amount"><strong>Amount</strong></label>
+            <input type="number" name="amount" value="1000" pattern="\d+" title="Please enter a positive integer." required><br><br>
+            <label for="phone"><strong>Mobile Number</strong></label><br><br>
+            <input type="number" name="phone" value="08104613143" pattern="\d{11}" required><br><br>
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" placeholder="sirjeff@gmail.com" required><br><br>
+            <button type="submit" value="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
